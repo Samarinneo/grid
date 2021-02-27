@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  border: 2px solid olive;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pic4a textuha";
+}
+
+.kartinka {
+  grid-area: pic4a;
+}
+.text {
+  display: block;
+  grid-area: textuha;
+  padding: 2em;
+  align-self: center;
+}
+
+.kartinka img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.container2 {
+  max-width: 900px;
+  border: 2px solid olive;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "text1 pic41 text2";
+}
+.kartina img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.text1,
+.text2 {
+  padding: 1em;
+  box-sizing: border-box;
+  align-self: center;
+}
+.container3 {
+  max-width: 900px;
+  border: 2px solid olive;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "text1 pic41 text2";
+}
+.kartina1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.kartina2 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.kartina3 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .container,
+  .container2,
+  .container3 {
+    display: block;
+  }
+}
